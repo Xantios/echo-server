@@ -11,12 +11,12 @@ The default config is just to get you started. if you want to do something excit
 
 this assumes that you have a laravel-echo-server.json in your current directory
 
-Docker compose
+Docker compose (Recommended)
 ```yaml
 version: "3"
 services:
     echoserver:
-        image: echoserver
+        image: xantios/echo-server
         volumes:
           - .:/app
     redis:
@@ -31,3 +31,14 @@ Or just running a container
 ### Redis
 The default config and setup does not container docker
 if you want to use docker, set up your own docker container or use the example above
+
+Make sure you set your databaseConfig in the json file, if you use compose the hostname is the name of the tag in the compose file
+
+```json
+  "databaseConfig" : {
+    "redis" : {
+      "port": "3001",
+      "host": "redis"
+    }
+  }
+```
