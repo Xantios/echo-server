@@ -1,0 +1,8 @@
+version: "3"
+services:
+    echoserver:
+        image: echoserver
+        volumes:
+          - .:/app
+    redis:
+        image: redis:latest
