@@ -1,5 +1,6 @@
 ## Laravel echo server 
 
+Laravel Echo Server is a project by [tlaverdure](https://github.com/tlaverdure/laravel-echo-server) this is just a docker wrapper!
 
 To get this party started we have to setup the echo server as usual
 running in a docker container doesnt make it much more of a chore than usual.
